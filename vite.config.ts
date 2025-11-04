@@ -14,4 +14,15 @@ export default defineConfig({
       '@': resolve('src'), // 设置 `@` 指向 `src` 目录
     },
   },
+  css: {
+    preprocessorOptions: {
+      less: {
+        math: 'always',
+        javascriptEnabled: true,
+        modifyVars: {
+          '@primary-color': '#1DA57A', // 自定义变量
+        },
+      },
+    },
+  },
 });
