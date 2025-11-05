@@ -14,6 +14,9 @@ export default defineConfig({
       '@': resolve('src'), // 设置 `@` 指向 `src` 目录
     },
   },
+  server: {
+    port: 3000,
+  },
   css: {
     preprocessorOptions: {
       less: {
